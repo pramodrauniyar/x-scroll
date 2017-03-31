@@ -33,8 +33,8 @@ It depends on the JQUERY plug in, so before using this, make sure you have jquer
 ### usages
 > $.xScroll('.x-scroll-jq');
 
-> <link rel='stylesheet' href="/bower_components/xScroll/xScroll.min.css">
-> <script type="text/javascript" src="/bower_components/xScroll/xScroll.min.js"></script>
+	 <link rel='stylesheet' href="/bower_components/xScroll/xScroll.min.css">
+	 <script type="text/javascript" src="/bower_components/xScroll/xScroll.min.js"></script>
 
 ### Install via bower
 > bower install x-scroll 

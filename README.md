@@ -2,10 +2,11 @@
 jquery plugin for horizontal scrolling
 #jQuery horizontal scrolling for multiple items per view
 
-##Description 
+## Description 
+
 This is simple jquery plugin for horizontal scrolling for multuple items per view.It includes left and right scrolling buttons and that can be customize. One can customize the setting options as described below:
 
-###default settings
+### default settings
 
     {
         'containerWrapper': '',
@@ -15,18 +16,18 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
    
      }
   		
-##Example horizontal scroll
+## Example horizontal scroll
 	 $.xScroll(
 	                    '.x-scroll-jq',
 	                    {containerWrapper:'#x-scroll-jq'}
 	                  );
 
 
-###Dependecy
+### Dependecy
 It depends on the JQUERY plug in, so before using this, make sure you have jquery libarary is loaded. 
 
-###usages
+### usages
 > $.xScroll('.x-scroll-jq');
 
-###Install via bower
+### Install via bower
 > bower install x-scroll 

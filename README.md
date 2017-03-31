@@ -31,3 +31,6 @@ It depends on the JQUERY plug in, so before using this, make sure you have jquer
 
 ### Install via bower
 > bower install x-scroll 
+
+### Example
+> http://codepen.io/pramodrauniyar/pen/vxvPmY

@@ -1,24 +1,15 @@
 {
-  "name": "x-scroll",
-  "version": "1.0.0",
-  "main": "./xScroll.js",
+  "name": "xScroll",
+  "homepage": "https://github.com/pramodrauniyar/x-scroll",
   "authors": [
-    "pramod.rauniyar@gmail.com <pramod.rauniyar@gmail.com>"
+    "Pramod <pramod.rauniyar@gmail.com>"
   ],
   "description": "jquery plugin for horizontal scrolling",
-  "moduleType": [
-    "globals"
-  ],
+  "main": "xScroll.js",
   "keywords": [
-    "horizontal",
-    "x-scroll",
-    "xScroll",
-    "scroll"
-    "jquery",
-    "rauniyar"
+    "xscroll"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/makeusabrew/bootbox",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -27,4 +18,3 @@
     "tests"
   ]
 }
-

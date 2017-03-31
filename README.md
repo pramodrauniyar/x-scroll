@@ -18,9 +18,9 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
   		
 ## Example horizontal scroll
 	 $.xScroll(
-	                    '.x-scroll-jq',
-	                    {containerWrapper:'#x-scroll-jq'}
-	                  );
+		    '.x-scroll-jq',
+		    {containerWrapper:'#x-scroll-jq'}
+		  );
 
 
 ### Dependecy

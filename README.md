@@ -22,7 +22,10 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
 		    '.x-scroll-jq',
 		    {containerWrapper:'#x-scroll-jq'}
 		  );
+	
 
+### Codepen example
+> http://codepen.io/pramodrauniyar/pen/vxvPmY
 
 ### Dependecy
 It depends on the JQUERY plug in, so before using this, make sure you have jquery libarary is loaded. 
@@ -33,5 +36,4 @@ It depends on the JQUERY plug in, so before using this, make sure you have jquer
 ### Install via bower
 > bower install x-scroll 
 
-### Example
-> http://codepen.io/pramodrauniyar/pen/vxvPmY
+

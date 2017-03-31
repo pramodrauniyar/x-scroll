@@ -1,5 +1,6 @@
 # x-scroll
 jquery plugin for horizontal scrolling
+
 #jQuery horizontal scrolling for multiple items per view
 
 ## Description 

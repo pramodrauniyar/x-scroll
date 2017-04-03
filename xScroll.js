@@ -1,5 +1,6 @@
 /*global $, jQuery*/
 /**
+ * Version 1.0.0
  * JQUERY plugin for horizontal scroll (xScroll)
  * @author Pramod Rauniyar 
  * @descriptions
@@ -25,6 +26,7 @@
         var currentScrollNumber = 1;
         var scrollPerItem = 2;
         var finalScroll;
+
       
 
         //setting default variables
@@ -32,7 +34,11 @@
             'containerWrapper': '',
             'animateTime' :1000,
             'btnColor':'#e03131',
-            'sliderItem':'.x-scroll-item'
+            'sliderItem':'.x-scroll-item',
+            'responsive':1,
+            'responsiveItem' :2,
+            'itemWidth' : 167,
+            'itemOffset':16
         }, options);
 
         //binding the click events
@@ -42,7 +48,14 @@
             $elementNextBtn.click(function(event) {
 
                 numberOfItem = $(settings.sliderItem).length;
-                totalPagination = Math.ceil(numberOfItem / itemPerView);
+                var itemWidth = parseInt($('.x-scroll-item').css('width'));
+                var currentVisibleWidth = parseInt($('.x-scroll-jq').css('width')) + settings.itemOffset;
+                var visibleItemWidth = numberOfItem * itemWidth;
+
+                settings.responsive = ( visibleItemWidth > currentVisibleWidth) ? settings.responsive : 0;
+              
+                totalPagination = Math.ceil(numberOfItem / itemPerView)+ settings.responsive;
+             
                 if (currentScrollNumber === totalPagination) {
                     $elementNextBtn.addClass('disabled-btn');
                     event.stopImmediatePropagation();
@@ -50,6 +63,7 @@
                 }
                 $elementNextBtn.removeClass('disabled-btn');
                 $elementPrevBtn.removeClass('disabled-btn');
+             
                 finalScroll = itemWidth * currentScrollNumber * scrollPerItem;
                 $container.animate({ scrollLeft: finalScroll }, settings.animateTime);
                 currentScrollNumber = currentScrollNumber + 1;
@@ -63,7 +77,7 @@
 
             //right click
             $elementPrevBtn.click(function(event) {
-
+                console.log("page: "+ totalPagination + " numberOfItem: "+ numberOfItem +" itemPerView "+itemPerView);
                 if (currentScrollNumber === 1) {
                     $elementPrevBtn.addClass('disabled-btn');
                     event.stopImmediatePropagation();
@@ -73,7 +87,7 @@
                 currentScrollNumber = currentScrollNumber - 1;
                 $elementPrevBtn.removeClass('disabled-btn');
                 $elementNextBtn.removeClass('disabled-btn');
-              
+                //$elementNextBtn.attr('style','background:'+settings.btnColor+'');
                 finalScroll = (currentScrollNumber === 1) ? 0 : itemWidth * currentScrollNumber;
 
                 $container.animate({ scrollLeft: finalScroll }, settings.animateTime);
@@ -98,10 +112,10 @@
             $elementPrevBtn = $('.scroll-previous');
             $elementNextBtn.attr('style','background:'+settings.btnColor+'');
             $elementPrevBtn.attr('style','background:'+settings.btnColor+'');
+           // $elementPrevBtn.addClass('disabled-btn');
             itemWidthPX = $(settings.sliderItem).css('width');
             itemWidth = parseInt(itemWidthPX);
             itemPerView = Math.round(parseInt($container.css('width')) / itemWidth);
-
             //bindling event
             bindEvents();
         };

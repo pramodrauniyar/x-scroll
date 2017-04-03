@@ -1,6 +1,7 @@
 # x-scroll
 jquery plugin for horizontal scrolling
-#jQuery horizontal scrolling for multiple items per view
+
+# jQuery horizontal scrolling for multiple items per view
 
 ## Description 
 
@@ -21,7 +22,10 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
 		    '.x-scroll-jq',
 		    {containerWrapper:'#x-scroll-jq'}
 		  );
+	
 
+### Codepen example
+> http://codepen.io/pramodrauniyar/pen/vxvPmY
 
 ### Dependecy
 It depends on the JQUERY plug in, so before using this, make sure you have jquery libarary is loaded. 
@@ -29,8 +33,10 @@ It depends on the JQUERY plug in, so before using this, make sure you have jquer
 ### usages
 > $.xScroll('.x-scroll-jq');
 
+	 <link rel='stylesheet' href="/bower_components/xScroll/xScroll.min.css">
+	 <script type="text/javascript" src="/bower_components/xScroll/xScroll.min.js"></script>
+
 ### Install via bower
 > bower install x-scroll 
 
-### Example
-> http://codepen.io/pramodrauniyar/pen/vxvPmY
+

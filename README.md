@@ -28,7 +28,7 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
 > http://codepen.io/pramodrauniyar/pen/vxvPmY
 
 ### Codepen example for multiple caresoule 
-> http://codepen.io/pramodrauniyar/pen/vxvPmY
+> https://codepen.io/pramodrauniyar/pen/RwboxYM
 
 ## Example horizontal multiple caresoule init
 

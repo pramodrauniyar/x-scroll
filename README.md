@@ -17,15 +17,24 @@ This is simple jquery plugin for horizontal scrolling for multuple items per vie
    
      }
   		
-## Example horizontal scroll
+## Example horizontal sinlge caresoule init
 	 $.xScroll(
 		    '.x-scroll-jq',
 		    {containerWrapper:'#x-scroll-jq'}
 		  );
 	
 
-### Codepen example
+### Codepen example for single carousel 
 > http://codepen.io/pramodrauniyar/pen/vxvPmY
+
+### Codepen example for multiple caresoule 
+> https://codepen.io/pramodrauniyar/pen/RwboxYM
+
+## Example horizontal multiple caresoule init
+
+	var scrollContainer=".x-scroll-jq";
+	$.xScroll(scrollContainer,{containerWrapper:"#x-scroll-jq"});
+	$.xScroll(scrollContainer,{containerWrapper:"#x-scroll-jq-2"});
 
 ### Dependecy
 It depends on the JQUERY plug in, so before using this, make sure you have jquery libarary is loaded. 
